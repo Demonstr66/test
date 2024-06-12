@@ -1,0 +1,46 @@
+.d {
+  &-flex {
+    display: flex;
+  }
+}
+
+.align {
+  &-center {
+    align-items: center
+  }
+}
+
+.text {
+  &-bold {
+    font-weight: 700 !important;
+  }
+
+  &-center {
+    text-align: center !important;
+  }
+}
+
+.flex {
+  &-grow {
+    &-1 {
+      flex-grow: 1;
+    }
+  }
+
+  &-wrap {
+    flex-wrap: wrap;
+  }
+
+  &-column {
+    flex-direction: column;
+  }
+}
+
+@for $i from 1 through 50 {
+  .gap-#{$i} {gap: $i * 1px;}
+}
+
+@for $i from 1 through 800 {
+  .mt-#{$i} {margin-top: $i * 1px;}
+  .ml-#{$i} {margin-left: $i * 1px;}
+}
